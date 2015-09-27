@@ -21,5 +21,9 @@ Use this with XMPP Bonjour compatible chat clients eg. Apple Messages
 A iOS App that allows controls HA nodes.
 
 ==Contribution==
+
 Pull requests are most welcome.
+
+**Protocol**
+Git flow is utilised to manage ongoing unstable development and stable releases.
 Please add tests where appropriate.
