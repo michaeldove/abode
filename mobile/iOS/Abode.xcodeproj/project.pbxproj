@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9EA875F41AC93A0D00A3725F /* NSNetService+ReactiveNetService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA875F31AC93A0D00A3725F /* NSNetService+ReactiveNetService.m */; };
+		9EA875F71AC93AC300A3725F /* AbodeCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA875F61AC93AC300A3725F /* AbodeCoordinator.m */; };
+		9EA875FA1ACD56FE00A3725F /* Reachability+Reachability_Reactive.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA875F91ACD56FE00A3725F /* Reachability+Reachability_Reactive.m */; };
+		9EDEDF871AC6AEE4003A1044 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDEDF861AC6AEE4003A1044 /* main.m */; };
+		9EDEDF8A1AC6AEE4003A1044 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDEDF891AC6AEE4003A1044 /* AppDelegate.m */; };
+		9EDEDF901AC6AEE4003A1044 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EDEDF8E1AC6AEE4003A1044 /* Main.storyboard */; };
+		9EDEDF921AC6AEE4003A1044 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EDEDF911AC6AEE4003A1044 /* Images.xcassets */; };
+		9EDEDF951AC6AEE4003A1044 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EDEDF931AC6AEE4003A1044 /* LaunchScreen.xib */; };
+		9EDEDFA11AC6AEE4003A1044 /* AbodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDEDFA01AC6AEE4003A1044 /* AbodeTests.m */; };
+		9EDEDFAD1AC6AF7F003A1044 /* IrrigationClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDEDFAC1AC6AF7F003A1044 /* IrrigationClient.m */; };
+		9EDEDFB01AC6B79A003A1044 /* Zone.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDEDFAF1AC6B79A003A1044 /* Zone.m */; };
+		9EDEDFB31AC6C52A003A1044 /* ZonesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDEDFB21AC6C52A003A1044 /* ZonesTableViewController.m */; };
+		B05FEA106AF60036D1B00480 /* libPods-Abode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B7A01AE189DD50012ED177 /* libPods-Abode.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9EDEDF9B1AC6AEE4003A1044 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EDEDF791AC6AEE4003A1044 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EDEDF801AC6AEE4003A1044;
+			remoteInfo = Abode;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18B7A01AE189DD50012ED177 /* libPods-Abode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Abode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		560ED8F2A50C2AF1D3DD8A4D /* Pods-Abode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Abode.release.xcconfig"; path = "Pods/Target Support Files/Pods-Abode/Pods-Abode.release.xcconfig"; sourceTree = "<group>"; };
+		5E9EFF92A66EF621A7472131 /* Pods-Abode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Abode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Abode/Pods-Abode.debug.xcconfig"; sourceTree = "<group>"; };
+		9EA875F21AC93A0D00A3725F /* NSNetService+ReactiveNetService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNetService+ReactiveNetService.h"; sourceTree = "<group>"; };
+		9EA875F31AC93A0D00A3725F /* NSNetService+ReactiveNetService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNetService+ReactiveNetService.m"; sourceTree = "<group>"; };
+		9EA875F51AC93AC300A3725F /* AbodeCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbodeCoordinator.h; sourceTree = "<group>"; };
+		9EA875F61AC93AC300A3725F /* AbodeCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbodeCoordinator.m; sourceTree = "<group>"; };
+		9EA875F81ACD56FE00A3725F /* Reachability+Reachability_Reactive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Reachability+Reachability_Reactive.h"; sourceTree = "<group>"; };
+		9EA875F91ACD56FE00A3725F /* Reachability+Reachability_Reactive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Reachability+Reachability_Reactive.m"; sourceTree = "<group>"; };
+		9EDEDF811AC6AEE4003A1044 /* Abode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Abode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EDEDF851AC6AEE4003A1044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EDEDF861AC6AEE4003A1044 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9EDEDF881AC6AEE4003A1044 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9EDEDF891AC6AEE4003A1044 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9EDEDF8F1AC6AEE4003A1044 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9EDEDF911AC6AEE4003A1044 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9EDEDF941AC6AEE4003A1044 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9EDEDF9A1AC6AEE4003A1044 /* AbodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EDEDF9F1AC6AEE4003A1044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EDEDFA01AC6AEE4003A1044 /* AbodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbodeTests.m; sourceTree = "<group>"; };
+		9EDEDFAB1AC6AF7F003A1044 /* IrrigationClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IrrigationClient.h; sourceTree = "<group>"; };
+		9EDEDFAC1AC6AF7F003A1044 /* IrrigationClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IrrigationClient.m; sourceTree = "<group>"; };
+		9EDEDFAE1AC6B79A003A1044 /* Zone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Zone.h; sourceTree = "<group>"; };
+		9EDEDFAF1AC6B79A003A1044 /* Zone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Zone.m; sourceTree = "<group>"; };
+		9EDEDFB11AC6C52A003A1044 /* ZonesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZonesTableViewController.h; sourceTree = "<group>"; };
+		9EDEDFB21AC6C52A003A1044 /* ZonesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZonesTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9EDEDF7E1AC6AEE4003A1044 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B05FEA106AF60036D1B00480 /* libPods-Abode.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EDEDF971AC6AEE4003A1044 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F90496329B76BAAFD1C8D98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18B7A01AE189DD50012ED177 /* libPods-Abode.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9EDEDF781AC6AEE4003A1044 = {
+			isa = PBXGroup;
+			children = (
+				9EDEDF831AC6AEE4003A1044 /* Abode */,
+				9EDEDF9D1AC6AEE4003A1044 /* AbodeTests */,
+				9EDEDF821AC6AEE4003A1044 /* Products */,
+				CC051CBB910B426E96032BB8 /* Pods */,
+				0F90496329B76BAAFD1C8D98 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9EDEDF821AC6AEE4003A1044 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EDEDF811AC6AEE4003A1044 /* Abode.app */,
+				9EDEDF9A1AC6AEE4003A1044 /* AbodeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EDEDF831AC6AEE4003A1044 /* Abode */ = {
+			isa = PBXGroup;
+			children = (
+				9EDEDFAA1AC6AF47003A1044 /* Networking */,
+				9EDEDF881AC6AEE4003A1044 /* AppDelegate.h */,
+				9EDEDF891AC6AEE4003A1044 /* AppDelegate.m */,
+				9EDEDF8E1AC6AEE4003A1044 /* Main.storyboard */,
+				9EDEDF911AC6AEE4003A1044 /* Images.xcassets */,
+				9EDEDF931AC6AEE4003A1044 /* LaunchScreen.xib */,
+				9EDEDFB11AC6C52A003A1044 /* ZonesTableViewController.h */,
+				9EDEDFB21AC6C52A003A1044 /* ZonesTableViewController.m */,
+				9EDEDF841AC6AEE4003A1044 /* Supporting Files */,
+			);
+			path = Abode;
+			sourceTree = "<group>";
+		};
+		9EDEDF841AC6AEE4003A1044 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9EDEDF851AC6AEE4003A1044 /* Info.plist */,
+				9EDEDF861AC6AEE4003A1044 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9EDEDF9D1AC6AEE4003A1044 /* AbodeTests */ = {
+			isa = PBXGroup;
+			children = (
+				9EDEDFA01AC6AEE4003A1044 /* AbodeTests.m */,
+				9EDEDF9E1AC6AEE4003A1044 /* Supporting Files */,
+			);
+			path = AbodeTests;
+			sourceTree = "<group>";
+		};
+		9EDEDF9E1AC6AEE4003A1044 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9EDEDF9F1AC6AEE4003A1044 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9EDEDFAA1AC6AF47003A1044 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9EA875F21AC93A0D00A3725F /* NSNetService+ReactiveNetService.h */,
+				9EA875F31AC93A0D00A3725F /* NSNetService+ReactiveNetService.m */,
+				9EDEDFAB1AC6AF7F003A1044 /* IrrigationClient.h */,
+				9EDEDFAC1AC6AF7F003A1044 /* IrrigationClient.m */,
+				9EDEDFAE1AC6B79A003A1044 /* Zone.h */,
+				9EDEDFAF1AC6B79A003A1044 /* Zone.m */,
+				9EA875F51AC93AC300A3725F /* AbodeCoordinator.h */,
+				9EA875F61AC93AC300A3725F /* AbodeCoordinator.m */,
+				9EA875F81ACD56FE00A3725F /* Reachability+Reachability_Reactive.h */,
+				9EA875F91ACD56FE00A3725F /* Reachability+Reachability_Reactive.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CC051CBB910B426E96032BB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E9EFF92A66EF621A7472131 /* Pods-Abode.debug.xcconfig */,
+				560ED8F2A50C2AF1D3DD8A4D /* Pods-Abode.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9EDEDF801AC6AEE4003A1044 /* Abode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EDEDFA41AC6AEE4003A1044 /* Build configuration list for PBXNativeTarget "Abode" */;
+			buildPhases = (
+				340CA378EEDBC43B49862FAD /* Check Pods Manifest.lock */,
+				9EDEDF7D1AC6AEE4003A1044 /* Sources */,
+				9EDEDF7E1AC6AEE4003A1044 /* Frameworks */,
+				9EDEDF7F1AC6AEE4003A1044 /* Resources */,
+				EA1ACC216B359F1AEEA51A2F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Abode;
+			productName = Abode;
+			productReference = 9EDEDF811AC6AEE4003A1044 /* Abode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9EDEDF991AC6AEE4003A1044 /* AbodeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EDEDFA71AC6AEE4003A1044 /* Build configuration list for PBXNativeTarget "AbodeTests" */;
+			buildPhases = (
+				9EDEDF961AC6AEE4003A1044 /* Sources */,
+				9EDEDF971AC6AEE4003A1044 /* Frameworks */,
+				9EDEDF981AC6AEE4003A1044 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EDEDF9C1AC6AEE4003A1044 /* PBXTargetDependency */,
+			);
+			name = AbodeTests;
+			productName = AbodeTests;
+			productReference = 9EDEDF9A1AC6AEE4003A1044 /* AbodeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9EDEDF791AC6AEE4003A1044 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Michael Dove";
+				TargetAttributes = {
+					9EDEDF801AC6AEE4003A1044 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = DNN4LRFDE6;
+					};
+					9EDEDF991AC6AEE4003A1044 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 9EDEDF801AC6AEE4003A1044;
+					};
+				};
+			};
+			buildConfigurationList = 9EDEDF7C1AC6AEE4003A1044 /* Build configuration list for PBXProject "Abode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9EDEDF781AC6AEE4003A1044;
+			productRefGroup = 9EDEDF821AC6AEE4003A1044 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9EDEDF801AC6AEE4003A1044 /* Abode */,
+				9EDEDF991AC6AEE4003A1044 /* AbodeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9EDEDF7F1AC6AEE4003A1044 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EDEDF901AC6AEE4003A1044 /* Main.storyboard in Resources */,
+				9EDEDF951AC6AEE4003A1044 /* LaunchScreen.xib in Resources */,
+				9EDEDF921AC6AEE4003A1044 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EDEDF981AC6AEE4003A1044 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		340CA378EEDBC43B49862FAD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EA1ACC216B359F1AEEA51A2F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Abode/Pods-Abode-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9EDEDF7D1AC6AEE4003A1044 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EDEDFB01AC6B79A003A1044 /* Zone.m in Sources */,
+				9EA875F41AC93A0D00A3725F /* NSNetService+ReactiveNetService.m in Sources */,
+				9EA875FA1ACD56FE00A3725F /* Reachability+Reachability_Reactive.m in Sources */,
+				9EDEDFB31AC6C52A003A1044 /* ZonesTableViewController.m in Sources */,
+				9EDEDFAD1AC6AF7F003A1044 /* IrrigationClient.m in Sources */,
+				9EDEDF8A1AC6AEE4003A1044 /* AppDelegate.m in Sources */,
+				9EA875F71AC93AC300A3725F /* AbodeCoordinator.m in Sources */,
+				9EDEDF871AC6AEE4003A1044 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EDEDF961AC6AEE4003A1044 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EDEDFA11AC6AEE4003A1044 /* AbodeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9EDEDF9C1AC6AEE4003A1044 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EDEDF801AC6AEE4003A1044 /* Abode */;
+			targetProxy = 9EDEDF9B1AC6AEE4003A1044 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9EDEDF8E1AC6AEE4003A1044 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EDEDF8F1AC6AEE4003A1044 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9EDEDF931AC6AEE4003A1044 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EDEDF941AC6AEE4003A1044 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9EDEDFA21AC6AEE4003A1044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9EDEDFA31AC6AEE4003A1044 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9EDEDFA51AC6AEE4003A1044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E9EFF92A66EF621A7472131 /* Pods-Abode.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Abode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		9EDEDFA61AC6AEE4003A1044 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 560ED8F2A50C2AF1D3DD8A4D /* Pods-Abode.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Abode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		9EDEDFA81AC6AEE4003A1044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AbodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Abode.app/Abode";
+			};
+			name = Debug;
+		};
+		9EDEDFA91AC6AEE4003A1044 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AbodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Abode.app/Abode";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9EDEDF7C1AC6AEE4003A1044 /* Build configuration list for PBXProject "Abode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EDEDFA21AC6AEE4003A1044 /* Debug */,
+				9EDEDFA31AC6AEE4003A1044 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EDEDFA41AC6AEE4003A1044 /* Build configuration list for PBXNativeTarget "Abode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EDEDFA51AC6AEE4003A1044 /* Debug */,
+				9EDEDFA61AC6AEE4003A1044 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EDEDFA71AC6AEE4003A1044 /* Build configuration list for PBXNativeTarget "AbodeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EDEDFA81AC6AEE4003A1044 /* Debug */,
+				9EDEDFA91AC6AEE4003A1044 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9EDEDF791AC6AEE4003A1044 /* Project object */;
+}

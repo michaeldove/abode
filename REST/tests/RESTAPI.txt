@@ -1,0 +1,10 @@
+>>> from restful_lib import Connection
+
+Setup connection to rest endpoint.
+>>> conn = Connection("http://irrigationback.local:3000")
+
+Query the status of all zones.
+>>> resp = conn.request_get("/zones",
+...                         args={}, headers={'content-type':'application/json', 'accept':'application/json'})
+>>> resp
+{u'body': u'[{"name":"Grass","id":0,"on":0,"description":"Lawn"},{"name":"Garden","id":1,"on":0,"description":"Tree and shrubs"},{"name":"Patch","id":2,"on":0,"description":"Side of house"}]', u'headers': {'status': '200', 'content-location': u'http://irrigationback.local:3000/zones', 'x-powered-by': 'Express', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'date': '... GMT', 'content-type': 'application/json'}}

@@ -1,0 +1,45 @@
+Machine Protocol
+================
+
+The machine protocol is not meant for direct human communication, it is 
+instead a protocol for communication amoungst machines.
+
+JSON serialization being common place in many languages was chosen to 
+convey the protocol.
+
+Lets start by defining a switch action which could be used to turn on a light.
+
+    >>> switch_action = {'class' : 'switch.action',
+    ...                  'action' : 'on',
+    ...                  'expiry' : 10,
+    ...                  'control' : 0 }
+
+
+A device can register to be notified of certain events.
+
+    >>> register = {'class' : 'notification.register',
+    ...             'event' : 'on',
+    ...             'control' : 0 }
+
+
+A device can unregister from notifications for an event.
+
+    >>> register = {'class' : 'notification.unregister',
+    ...             'event' : 'on',
+    ...             'control' : 0 }
+
+
+To find out what controls the endpoint contains we can ask it to describe
+it self.
+
+    >>> describe = {'class' : 'describe.query',
+    ...             'control_types' : ['switch', level]}
+
+The endpoint would respond to a describe query.
+
+    >>> describe = {'class' : 'describe.response',
+    ...             'controls' : [
+    ...                 {'id' : 0,
+    ...                  'name' : 'Front light',
+    ...                  'class' : 'switch',
+    ...                  'status' : 'on'},]}

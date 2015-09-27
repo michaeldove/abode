@@ -1,0 +1,8 @@
+status: 200
+content-location: http://irrigationback.local:3000/zones
+x-powered-by: Express
+connection: keep-alive
+date: Fri, 03 Apr 2015 12:36:11 GMT
+content-type: application/json
+
+[{"name":"Grass","id":0,"on":0,"description":"Lawn"},{"name":"Garden","id":1,"on":0,"description":"Tree and shrubs"},{"name":"Patch","id":2,"on":0,"description":"Side of house"}]

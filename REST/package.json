@@ -1,0 +1,10 @@
+{
+  "name": "abode",
+  "version": "1.0.0",
+  "dependencies": {
+    "body-parser": "^1.12.2",
+    "express": "^4.12.3",
+    "http": "0.0.0",
+    "onoff": "^1.0.2"
+  }
+}

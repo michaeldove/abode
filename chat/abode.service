@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone='no'?>
+<!DOCTYPE service-group SYSTEM "avahi-service.dtd">
+<service-group>
+        <name replace-wildcards="yes">%h</name>
+        <service>
+                <type>_presence._tcp</type>
+                <port>7364</port>
+                <txt-record>txtvers=1</txt-record>
+                <txt-record>1st=Abode node</txt-record>
+                <txt-record>email=node@abode.localhost</txt-record>
+                <txt-record>last=Home</txt-record>
+                <txt-record>nick=Abode @ Home</txt-record>
+                <txt-record>status=avail</txt-record>
+        </service>
+        <service>
+                <type>_ssh._tcp</type>
+                <port>22</port>
+        </service>
+</service-group>

@@ -1,0 +1,90 @@
+HA Chat Protocol
+================
+
+The chat protocol is the human enterable form of commands.
+There is no XML or JSON just easy line based commands.
+
+    >>> from protocol import HumanCommandProtocol
+    >>> protocol = HumanCommandProtocol()
+
+A protocol has help.
+
+    >>> protocol.help()
+    ('describe.',)
+
+Help is also parsed.
+
+    >>> protocol.parse('help')
+    ('describe.',)
+
+If we input an unknown command it will let us know.
+
+    >>> protocol.parse('foobar')
+    ('Unknown command.',)
+
+Query for the available controls.
+No controls are defined.
+
+    >>> protocol.describe()
+    []
+
+To define control we first need to define a klass that the control type:
+
+    >>> protocol.define_klass(name='Irrigation')
+    ('Irrigation<...> klass defined.',)
+
+More than one class can exist.
+    >>> protocol.define_klass(name='Lighting')
+    ('Lighting<...> klass defined.',)
+
+If we try to define a class with the same name it won't do it.
+
+    >>> protocol.define_klass(name='Irrigation')
+    ('Irrigation klass already defined.',)
+
+Define a control.
+    
+    >>> protocol.define_control(name='Front Grass', klass='Irrigation')
+    ('Front Grass control (...) defined as Irrigation.,)
+
+If we try defining a control that has an invalid klass it won't do it.
+
+    >>> protocol.define_control(name='Garden', klass='foobar')
+    ("Garden control cannot be defined due to an undefined klass 'foobar'",)
+
+We cannot define another control with the same name and klass.
+
+    >>> protocol.define_control(name='Front Grass', klass='Irrigation')
+    ('Front Grass control of Irrigation klass cannot be defined as it already exists.',) 
+
+    >>> protocol.define_control(name='Front Grass', klass='Lighting')
+    ('Front Grass control (...) defined as Lighting.,)
+
+Now we can query what controls are available.
+
+    >>> protocol.describe()
+    ('... Front Grass (Irrigation)',
+     '... Front Grass (Lighting)',)
+
+A control has a status.
+
+    >>> protocol.status('0x12345')
+    ('0x12345 is on.',)
+
+The status can also be queried using the parser.
+
+    >>> protocol.parse('status of 0x12345')
+    ('0x12345 is on.',)
+
+
+if no such id exists for a status query then it will let us know.
+
+    >>> protocol.parse('status of x333222')
+    ('Unknown control id.')
+
+
+We can interact with a control.
+
+    >>> ON = True
+    >>> protocol.switch(0x12345, ON)
+    ('

@@ -1,0 +1,30 @@
+File "/usr/local/lib/python2.7/dist-packages/twisted/internet/tcp.py", line 203, in doRead
+    return self._dataReceived(data)
+  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/tcp.py", line 209, in _dataReceived
+    rval = self.protocol.dataReceived(data)
+  File "/usr/local/lib/python2.7/dist-packages/twisted/words/xish/xmlstream.py", line 75, in dataReceived
+    self.stream.parse(data)
+  File "/usr/local/lib/python2.7/dist-packages/twisted/words/xish/domish.py", line 754, in parse
+    self.parser.Parse(buffer)
+  File "/usr/local/lib/python2.7/dist-packages/twisted/words/xish/domish.py", line 787, in _onStartElement
+    self.DocumentStartEvent(e)
+  File "talk.py", line 163, in onDocumentStart
+    self.streamStarted(rootElement)
+  File "talk.py", line 134, in streamStarted
+    self.otherEntity = jid.internJID(rootElement["from"])
+  File "/usr/local/lib/python2.7/dist-packages/twisted/words/protocols/jabber/jid.py", line 119, in internJID
+    j = JID(jidstring)
+  File "/usr/local/lib/python2.7/dist-packages/twisted/words/protocols/jabber/jid.py", line 137, in __init__
+    user, host, res = parse(str)
+  File "/usr/local/lib/python2.7/dist-packages/twisted/words/protocols/jabber/jid.py", line 65, in parse
+    return prep(user, host, resource)
+  File "/usr/local/lib/python2.7/dist-packages/twisted/words/protocols/jabber/jid.py", line 95, in prep
+    raise InvalidFormat, "Invalid character in hostname"
+  File "/usr/local/lib/python2.7/dist-packages/twisted/words/protocols/jabber/jid.py", line 119, in internJID
+    j = JID(jidstring)
+  File "/usr/local/lib/python2.7/dist-packages/twisted/words/protocols/jabber/jid.py", line 137, in __init__
+    user, host, res = parse(str)
+  File "/usr/local/lib/python2.7/dist-packages/twisted/words/protocols/jabber/jid.py", line 65, in parse
+    return prep(user, host, resource)
+  File "/usr/local/lib/python2.7/dist-packages/twisted/words/protocols/jabber/jid.py", line 95, in prep
+    raise InvalidFormat, "Invalid character in hostname"

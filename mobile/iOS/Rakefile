@@ -1,0 +1,42 @@
+task :environment do
+  puts "Setup environment"
+  sh "brew install Caskroom/cask/oclint; true"
+end
+
+task :archive do
+  sh "xcodebuild -workspace Abode.xcworkspace -scheme Abode -archivePath ./build archive | xcpretty -c"
+end
+
+task :build do
+  sh "xctool -workspace Abode.xcworkspace -scheme Abode -reporter json-compilation-database:compile_commands.json clean build"
+end
+
+namespace :quality do
+  task :oclint => :environment do
+	  puts "Running OCLint"
+  end
+
+  task :staticanalysis do
+	  sh "xcodebuild -workspace Abode.xcworkspace -scheme Abode analyze | xcpretty -c"
+  end
+end
+
+namespace :signing do
+  task :identities do
+    sh "security find-identity -v -p codesigning"
+  end
+
+  task :status do
+    sh "codesign -vv -d build.xcarchive/Products/Applications/Abode.app"
+  end
+
+  task :verify do
+    sh "codesign --verify build.xcarchive/Products/Applications/Abode.app"
+  end
+
+  task :entitlements do
+    sh "codesign -d --entitlements - build.xcarchive/Products/Applications/Abode.app"
+  end
+end
+
+task :default => 'quality:oclint'
