@@ -66,7 +66,7 @@ class ServerlessXMPPProtocol(XmlStream):
             try:
                 self.zone_state(zone, True)
             except exceptions.OSError, e:
-                traceback.print_exec()
+                traceback.print_exc()
                 reply_body = "I was unable to turn on the %s zone." % zone
                 reply_body += '\n%s' % traceback.format_exc()
         else:
