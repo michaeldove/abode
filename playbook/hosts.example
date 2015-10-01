@@ -1,0 +1,2 @@
+[abode-node]
+192.168.1.157 ansible_ssh_user=pi ask_pass=True

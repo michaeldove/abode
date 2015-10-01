@@ -1,0 +1,10 @@
+---
+- name: Install Chat and Bonjour
+  hosts: abode-node
+  remote_user: pi
+  # remote_user: user
+  sudo: yes
+
+  roles:
+    #- common
+    - chat

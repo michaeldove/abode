@@ -1,0 +1,10 @@
+---
+- name: Install Avahi daemon
+  apt: name=avahi-daemon update_cache=yes
+
+- name: Setup avahi
+  copy: src=abode.service dest=/etc/avahi/services/abode.service
+  notify: restart avahi
+
+- name: Install wiringPi
+  apt: name=wiringpi
