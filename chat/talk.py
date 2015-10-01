@@ -20,8 +20,7 @@ class ServerlessXMPPProtocol(XmlStream):
 
     NAMESPACE = 'jabber:client'
     STREAM_NAMESPACE = 'http://etherx.jabber.org/streams'
-    ZONE_ON = "/usr/local/bin/gpio -g write %d 0"
-    ZONE_OFF = "/usr/local/bin/gpio -g write %d 1"
+    GPIO_CMD_PATH = "gpio"
 
     def __init__(self):
         XmlStream.__init__(self)
@@ -39,7 +38,7 @@ class ServerlessXMPPProtocol(XmlStream):
                     'grass' : '17'}[zone]
 
         gpio_level = {True:'0', False:'1'}[on]
-        subprocess.call(["/usr/local/bin/gpio", "-g", "write",
+        subprocess.call([self.GPIO_CMD_PATH, "-g", "write",
                          gpio_pin,
                          gpio_level])
 
