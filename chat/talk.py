@@ -168,5 +168,5 @@ class ServerlessXMPPFactory(protocol.ServerFactory):
 
     protocol = ServerlessXMPPProtocol
 
-reactor.listenTCP(1234, ServerlessXMPPFactory())
+reactor.listenTCP(7364, ServerlessXMPPFactory())
 reactor.run()
