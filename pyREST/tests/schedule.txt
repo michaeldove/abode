@@ -1,0 +1,19 @@
+Valve Timer
+===========
+
+A valve timer turns a valve on for a specified period of time.
+
+>>> import time
+>>> import valve
+
+>>> valve.timedOn(2, 1)
+Channel: 2, on: 1
+>>> time.sleep(2)
+Channel: 2, on: 0
+
+A timer may be cancelled at any point.
+
+>>> valve.timedOn(1, 2)
+Channel: 1, on: 1
+>>> valve.clearTimeout(1)
+>>> time.sleep(3)

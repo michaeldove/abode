@@ -1,0 +1,18 @@
+Zone API
+========
+
+The Zone RESTful API supports the retrieval of zone information:
+
+>>> import api
+>>> app = api.app.test_client()
+>>> response = app.get('/zones')
+>>> response.data
+'[{"on": 0, "description": "Lawn", "name": "Grass", "id": 0}, {"on": 1, "description": "Tree and shrubs", "name": "Garden", "id": 1}, {"on": 1, "description": "Side of house", "name": "Patch", "id": 2}]'
+
+A Zone may be switched on or off for a period of time:
+
+>>> response = app.put('/zones/1', data=dict(duration=2, on=1))
+Channel: 1, on: 1
+>>> import time
+>>> time.sleep(3)
+Channel: 1, on: 0
